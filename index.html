@@ -9,9 +9,50 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body>
-
+<body  class="w-11/12 mx-auto">
+    <header>
+        <!-- NavBar start here -->
+        <nav>
+            <div class="navbar flex flex-col md:flex-row items-center justify-center md:justify-between gap-2 py-4 border-b-2">
+                <div class="navbar-start md:w-2/12 w-4/12">
+                  
+                  <a href="#"><img src="./asset/Logo.png" alt=""></a>
+                </div>
+                <div class="w-10/12 md:w-4/12  mx-auto">
+                    <label class="input w-full input-bordered border-rose-500   flex items-center gap-2">
+                        <input type="text" class="grow" placeholder="Search" />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 16 16"
+                          fill="currentColor"
+                          class="h-4 w-4 opacity-70">
+                          <path
+                            fill-rule="evenodd"
+                            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                            clip-rule="evenodd" />
+                        </svg>
+                      </label>
+                </div>
+                <div class="navbar-center md:navbar-end">
+                    <button class=" p-2 rounded-md bg-[#FF1F3D] text-white text-lg hover:bg-black">Sort by view
+                    </button>
+              </div>
+        </nav>
+        <!-- NavBar end here -->
+         <!-- button -->
+        <div id="categoriesContainer" class="flex items-center justify-center gap-2 my-6">
+            
+        </div>
+    </header>
+    <main class="mt-12">
+        <section>
+            <div id="videosContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              
+            </div>
+        </section>
+    </main>
+    <script src="./js/utilati.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
